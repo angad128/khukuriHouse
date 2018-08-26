@@ -7,6 +7,7 @@ body {
    background-color: #B90000;
    overflow-x: hidden;
 }
+
 #main {
    min-height:100%;
    position:relative;
@@ -14,8 +15,7 @@ body {
    overflow-x: hidden;
 }
 #header {
-   background:#ff0;
-   height: 50px;
+   background-color: #B90000;
    padding:10px;
    overflow-x: hidden;
 }
@@ -32,7 +32,9 @@ body {
    background:#6cf;
    overflow-x: hidden;
 }
-
+.navbar {
+     background:#ff0;
+}
 /* Info Section*/
 #info .container {
    width: 1000px;
