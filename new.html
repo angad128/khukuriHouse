@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New</title>
+	<style type="text/css">
+		.owl-carousel.owl-loaded {
+		display: inline-block;
+	}
+	.img-wrap {
+	background-size: cover;
+    background-position: bottom;
+	height: 300px;
+    width: 300px;
+	}
+    img {
+        visibility: hidden;
+    }
+}
+	</style>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+<body>
+
+	<div id="owl-demo" class="owl-carousel owl-theme">
+          
+	  <div class="item"><img src="img/teacher1.jpg" alt="Owl Image"></div>
+	  <div class="item"><img src="img/teacher2.jpg" alt="Owl Image"></div>
+	  <div class="item"><img src="img/teacher3.jpg" alt="Owl Image"></div>
+	  <div class="item"><img src="img/teacher4.jpg" alt="Owl Image"></div>
+	  <div class="item"><img src="img/teacher5.jpg" alt="Owl Image"></div>
+
+	</div>
+
+	<script src="js/jquery-slim.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+	$( '.owl-carousel' ).owlCarousel({
+    items: 5,
+    nav: true,
+    dots: false,
+    mouseDrag: true,
+    responsiveClass: true,
+    responsive: {
+        0:{
+          items: 1
+        },
+        480:{
+          items: 3
+        },
+        769:{
+          items: 5
+        }
+    }
+});
+
+//Background image
+$( '.img-wrap' ).each( function(){
+    var img = $( this ).find( 'img' );
+    var src = img.attr( 'src' );
+    $( this ).css( 'background-image', 'url( '+ src +' )' );
+});
+</script>
+</body>
+</html>

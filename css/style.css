@@ -35,6 +35,7 @@ body {
 .navbar {
      background:#ff0;
 }
+
 /* Info Section*/
 #info .container {
    width: 1000px;
@@ -328,3 +329,23 @@ body {
       font-size: 10px;
    }
 }
+
+/*Products*/
+#products {
+   width: 100%;
+   margin-top: 60px;
+   height: auto;
+}
+#products .item {
+   background: #fff;
+   height: 300px;
+}
+
+/* control image height */
+#products .item .card-img-top-250 {
+    max-height: 207px;
+    overflow:hidden;
+}
+
+
+.card-header{color:dodgerblue}
